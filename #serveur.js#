@@ -1,0 +1,11 @@
+const http = require('http');
+const host = 'localhost';
+const port = 3001;
+
+http.createServer(function (req, res) {
+    if (req.originalUrl == 'http/')
+    res.write('serveur crée');
+    res.end();
+}).listen(port);
+
+console.log("serveur créer");
